@@ -1,0 +1,1 @@
+{"version":3,"file":"not-allowed-error.js","sourceRoot":"","sources":["../../../../src/errors/not-allowed-error.ts"],"names":[],"mappings":";;;AAAA,qDAA6C;AAE7C,MAAsB,eAAgB,SAAQ,6BAAW;IAGvD,YAAY,SAAiB,EAAE,OAAe;QAC5C,KAAK,CAAC,OAAO,CAAC,CAAC;QACf,IAAI,CAAC,UAAU,GAAG,GAAG,CAAC;IACxB,CAAC;CACF;AAPD,0CAOC"}

@@ -1,0 +1,196 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Auction service - OpenAPI 3.0",
+    "version": "1.0.11"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/user/register": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Register user",
+        "operationId": "register",
+        "requestBody": {
+          "description": "Authentication - register user",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          },
+          "500": {
+            "description": "server error"
+          }
+        }
+      }
+    },
+    "/user/login": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Login user",
+        "operationId": "login",
+        "requestBody": {
+          "description": "Login user",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          },
+          "500": {
+            "description": "server error"
+          }
+        }
+      }
+    },
+    "/guest/bids": {
+      "get": {
+        "tags": [
+          "Guest"
+        ],
+        "summary": "Only view the list of the completed bid (sort by latest or highest).",
+        "operationId": "getBids",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/deposit": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "Adds deposit.",
+        "operationId": "deposit",
+        "responses": {
+          "204": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/item": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "create item",
+        "operationId": "createItem",
+        "responses": {
+          "201": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/publish": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "publish item",
+        "operationId": "publishItem",
+        "responses": {
+          "204": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/bid": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "create bid",
+        "operationId": "createBid",
+        "responses": {
+          "201": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/account/bids": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "summary": "Get item bids",
+        "operationId": "getItemBids",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "controllerPathGlobs": ["src/http/controllers/account-controller.ts"],
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "spec": {
+        "outputDirectory": "./dist",
+        "entryFile": "src/index.ts",
+        "host": "localhost:3000",
+        "basePath": "/v1",
+        "controllerPathGlobs": ["src/http/controllers/account-controller.ts"],
+        "specVersion": 3
+    },
+    "routes": {
+        "basePath": "/v1",
+        "entryFile": "./src/index.ts",
+        "controllerPathGlobs": ["src/http/controllers/account-controller.ts"],
+        "routesDir": "./src"
+    }
+}
